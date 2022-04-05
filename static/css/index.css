@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+    background: #eee;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 1240px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.row{
+    margin-left: -12px;
+    margin-right: -12px;
+    display: flex;
+}
+
+.col{
+    width: 50%;
+    padding: 24px;
+}
+
+#main_header-section{
+    padding: 160px 0;
+    background-color: #2c3e50 ;
+    height: 100vh;
+}
+
+.text-wrap{
+    width: 100%;
+}
+.text-wrap h1{
+    color: #ecf0f1;
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 72px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.text-wrap h1 strong{
+    display: block;
+    font-weight: bold;
+}
+.text-wrap p{
+    color: #ecf0f1;
+    font-size: 18px;
+    line-height: 32px;
+}
+.menu-wrap li{
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.menu-wrap li a{
+    display: block;
+    padding: 24px;
+    font-size: 24px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+.menu-wrap li span{
+    position: absolute;
+    right: 24px;
+    font-size: 26px;
+    line-height: 24px;
+    color: #ecf0f1;
+    padding-right: 24px;
+    background-size: 20px;
+    background-position: right;
+}
+.menu-wrap li:hover{
+    background-color: #7d9dbd;
+}
+ 
+@media screen and (max-width: 768px) {
+    #main_header-section{
+        padding: 80px 0;
+    }
+    #main_header-section .row{
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text-wrap h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .text-wrap p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .menu-wrap li{
+        margin-bottom: 16px;
+    }
+    
+    .menu-wrap li a{
+        padding: 16px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .menu-wrap li span{
+        right: 12px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+

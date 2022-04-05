@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+	padding: 0px;
+	list-style: none;
+    color: #ecf0f1;
+	text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;   
+}
+body{
+    background: #eee;
+}
+
+.container{
+    width: 100%;
+    max-width: 1240px;
+    margin: auto;
+    padding: 0 20px;
+    
+}
+
+.row{
+    margin-left: -12px;
+    margin-right: -12px;
+    display: flex;
+}
+
+.col{
+    width: 50%;
+    padding: 24px;
+}
+
+#analysis-section{
+    padding: 10px 0;
+    background-color: #2c3e50 ;
+    height: 100vh;
+}
+.header-wrap{
+    width: 50%;
+}
+.header-wrap h1{
+    color: #ecf0f1;
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 72px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+#main_header > label{
+    display: block;
+    height: 60px;
+    position: absolute;
+} 
+#main_header > label.right{
+    font-size: 30px;
+    width: 32px;
+    right: 10px; top: 25px;
+    cursor: pointer;
+}
+#toggle{display: none;}
+#toggle + #wrap .header-wrap > #toggle_gnb{display: none;}
+#toggle:checked + #wrap .header-wrap > #toggle_gnb{display: block;}
+
+.toggle_gnb_wrap li{
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.toggle_gnb_wrap li a{
+    display: block;
+    padding: 2px 15px;
+    text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	color: #ecf0f1;
+    text-align: center;
+    line-height: 20px;
+}
+#toggle_gnb > ul{overflow: hidden;}
+
+#toggle_gnb > ul > li{
+    width: 250px; height: 34px; float: left; 
+    font-size: 20px; font-weight: bold;
+}
+
+
+/*#toggle_gnb > ul > li >a.active{
+	text-decoration: none; 
+	background-color: #7d9dbd;
+}*/
+.toggle_gnb_wrap li:hover{
+    background-color: #7d9dbd;
+}
+
+#banner {
+    font-size: 30px;
+    color: #ecf0f1;
+    font-weight: bold;
+    padding: 5px 10px
+}
+@media screen and (max-width: 768px){
+    #analysis-section{
+        padding: 10px 0;
+    }
+    #analysis-section .row{
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .header-wrap h1{
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    #main_header > label.right{
+        font-size: 20px;
+        width: 20px;
+        right: 15px; top: 25px;
+    }
+
+    .toggle_gnb_wrap li{
+        width: 80%;
+        margin-bottom: 14px;
+    }
+    
+    .toggle_gnb_wrap li a{
+        padding: 2px 5px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    #toggle_gnb > ul > li{
+        width: 180px; height: 34px;
+    }
+
+    #banner {
+        font-size: 20px;
+        padding: 0 5px
+    }
+   
+}
