@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link href="static/css/index.css" rel="stylesheet">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>KOOKDAT</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,50 +22,17 @@
                             해당 사고 종류를 클릭하면 사고 다발지역을 확인할 수 있습니다.</p>
                         </div>
                     </div>
-    
+   
                     <div class="col">
                         <ul class="menu-wrap">
                             <li><a href="/hazard">
-                                교통사고 다발지역<span>💥🚗</span></a></li>
+                                교통사고 다발지역<span>💥 🚗</span></a></li>
                             <li><a href="/analysis">
-                                교통사고 분석<span>🔎🚗</span></a></li>
+                               교통사고 분석<span>🔎 🚗</span></a></li>
                         </ul>
                     </div>     
                 </div> 
             </div> 
         </section>
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script type="text/javascript">
-            function success({coords}) {
-                const latitude = coords.latitude;   // 위도
-                const longitude = coords.longitude; // 경도
-                
-                var location_data = {"latitude" : latitude, "longitude" : longitude};
-
-                console.log(`위도: ${latitude}, 경도: ${longitude}`);
-
-                $.ajax({
-                    url:'/get_location',
-                    contentType : "application/json; charset=uft-8",
-                    data : JSON.stringify(location_data),
-                    type : "post",
-                    success : function(location_data) {
-                        console.log(`${location_data} 전송 성공`);
-                    },
-                    error : function(location_data) {
-                        console.log("실패");
-                    }
-                });
-            }
-    
-            function getUserLocation() {
-                if (!navigator.geolocation) {
-                    throw "위치 정보가 지원되지 않습니다.";
-                }
-                navigator.geolocation.watchPosition(success);
-            }
-    
-            getUserLocation();
-        </script>
     </body>
  </html>

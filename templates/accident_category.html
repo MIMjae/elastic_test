@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="static/css/category_style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>교통사고 통계</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <section id="category-section">
+            <div class="container">
+                <input id="toggle" type="checkbox"/>
+                <div id="wrap">
+                    <div class="row">
+                        <div class = "header-wrap">
+                            <header id="main_header">
+                                <a href="/"><h1>KOOKDAT</h1></a>    
+                                <label class="right" for="toggle">◀</label>
+                            </header>
+                            <div id="toggle_gnb">
+                                <ul class = "toggle_gnb_wrap">
+                                    <li><a class="active" href="/hazard">💥 교통사고 다발지역</a></li>
+                                    <li><a href="/analysis">🔎 교통사고 분석</a></li>
+                                </ul>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div id="banner">
+                        <div class="mainText">
+                            <h4>🔎 교통사고 분석 - 부문별 교통사고 📊</h4>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="row">
+                    <div class="menu-container">
+                        <ul class="ks-cboxtags">
+                          <li>
+                            <input type="button" id="buttonOne" value="children">
+                            <label for="buttonOne">🧒 어린이</label>
+                          </li>
+                          <li>
+                            <input type="button" id="buttonTwo" value="walker">
+                            <label for="buttonTwo">🚶 보행자</label>
+                          </li>
+                          <li><input type="button" id="buttonThree" value="elder">
+                            <label for="buttonThree">🧓 고령자</label>
+                          </li>
+                          <li><input type="button" id="buttonFour" value="bicycle">
+                            <label for="buttonFour">🚲 자전거</label>
+                          </li>
+                          <li><input type="button" id="buttonFive" value="motor">
+                            <label for="buttonFive">🏍️ 오토바이</label>
+                          </li>
+                          <li><input type="button" id="buttonSix" value="car">
+                            <label for="buttonSix">🚗 차량</label>
+                          </li>
+                        </ul>
+                        <img src="static/images/d2.jpg" alt="닥스훈트">
+                        <script type="text/javascript" src="static/js/category_js.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+ </html>

@@ -27,7 +27,6 @@ def createIndex(client):
         }
     )
 
-# x = {'latitude': 37.57729529370142, 'longitude': 126.97259184388231}
 def dataInsert(client, data):
     doc= {
         "current_loc" : [data["longitude"], data["latitude"]]

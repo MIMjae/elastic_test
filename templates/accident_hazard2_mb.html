@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="static/css/harzard_mb2_style.css" rel="stylesheet">
+        <link href="static/css/hazard_mb2_style.css" rel="stylesheet">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>교통사고 다발지역</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,7 @@
                     <div class="row">
                         <div class = "header-wrap">
                             <header id="main_header">
-                                <a href="/"><h1>KOOKDAT</h1></a>    
+                                <a href="/"><h1>KOOKDAT</h1></a>
                                 <label class="right" for="toggle">◀</label>
                             </header>
                             <div id="toggle_gnb">
@@ -41,8 +42,8 @@
                 <div class="row">
                     <div class="menu-container">
                         <ul class="ks-cboxtags">
-                        <li>
-                         <input type="checkbox" id="checkboxOne" value="children">
+                          <li>
+                            <input type="checkbox" id="checkboxOne" value="children">
                             <label for="checkboxOne">🧒 어린이</label>
                           </li>
                           <li>
@@ -75,7 +76,7 @@
             function success({coords}) {
                 const latitude = coords.latitude;   // 위도
                 const longitude = coords.longitude; // 경도
-                
+
                 var location_data = {"latitude" : latitude, "longitude" : longitude};
 
                 console.log(`위도: ${latitude}, 경도: ${longitude}`);
@@ -93,14 +94,14 @@
                     }
                 });
             }
-    
+
             function getUserLocation() {
                 if (!navigator.geolocation) {
                     throw "위치 정보가 지원되지 않습니다.";
                 }
                 navigator.geolocation.watchPosition(success);
             }
-    
+
             getUserLocation();
         </script>
     </body>
