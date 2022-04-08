@@ -19,25 +19,22 @@ function changeColor(){
 }
 
 buttonOne.addEventListener('click', function(){
-    img.src = 'images/d2.jpg';
+    img.src = 'images/schoolzone.jpg';
 });
 
 buttonTwo.addEventListener('click', function() {
-    img.src = 'images/d3.jpg';
+    img.src = 'images/pedestrian.jpg';
 })
-buttonTwo.addEventListener('click', function() {
-    style.backgroundColor = '#7d9dbd';
-    style.color = '#fff';
-});
+
 buttonThree.addEventListener('click', function() {
-    img.src = 'images/shd.jpg';
+    img.src = 'images/elder.jpg';
 })
 buttonFour.addEventListener('click', () => {
-    img.src = 'images/d2.jpg';
+    img.src = 'images/bicycle.jpg';
 })
 buttonFive.addEventListener('click', () => {
-    img.src = 'images/d3.jpg';
+    img.src = 'images/bike.jpg';
 })
 buttonSix.addEventListener('click', () => {
-    img.src = 'images/shd.jpg';
+    img.src = 'images/car.jpg';
 })
