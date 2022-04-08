@@ -65,13 +65,44 @@
                             <label for="buttonSix">🚗 차량</label>
                           </li>
                         </ul>
-                        <img src="static/images/schoolzone.jpg" alt="어린이">
-                        <img src="static/images/elder.jpg" alt="고령자">
+                       <img src="static/images/schoolzone.jpg" alt="어린이">
+                        <!--<img src="static/images/elder.jpg" alt="고령자">
                         <img src="static/images/bike.jpg" alt="이륜차">
                         <img src="static/images/bicycle.jpg" alt="자전거">
                         <img src="static/images/car.jpg" alt="자동차">
-                        <img src="static/images/pedestrian.jpg" alt="보행자">
-                        <script type="text/javascript" src="static/js/category_js.js"></script>
+                        <img src="static/images/pedestrian.jpg" alt="보행자">-->
+                        <script type="text/javascript">
+                            let img = document.querySelector('img');
+
+                            buttonOne = document.getElementById('buttonOne');
+                            buttonTwo = document.getElementById('buttonTwo');
+                            buttonThree = document.getElementById('buttonThree');
+                            buttonFour = document.getElementById('buttonFour');
+                            buttonFive = document.getElementById('buttonFive');
+                            buttonSix = document.getElementById('buttonSix');
+
+
+                            buttonOne.addEventListener('click', ()=>{
+                                img.src = 'static/images/schoolzone.jpg';
+                            })
+
+                            buttonTwo.addEventListener('click', () =>{
+                                img.src = 'static/images/pedestrian.jpg';
+                            })
+
+                            buttonThree.addEventListener('click', ()=> {
+                                img.src = 'static/images/elder.jpg';
+                            })
+                            buttonFour.addEventListener('click', () => {
+                                img.src = 'static/images/bicycle.jpg';
+                            })
+                            buttonFive.addEventListener('click', () => {
+                                img.src = 'static/images/bike.jpg';
+                            })
+                            buttonSix.addEventListener('click', () => {
+                                img.src = 'static/images/car.jpg';
+                            })
+                        </script>
                     </div>
                 </div>
             </div>
