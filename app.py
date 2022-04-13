@@ -4,12 +4,12 @@ from elasticsearch import Elasticsearch
 
 app = Flask(__name__)
 
-ELASTIC_PASSWORD = "L0iFQrmhaqpL0Dc1W8vwrFc8"
+ELASTIC_PASSWORD = " "
 
-CLOUD_ID = "kookdata:YXAtbm9ydGhlYXN0LTIuYXdzLmVsYXN0aWMtY2xvdWQuY29tOjkyNDMkZjhmY2IzMDdhNmY1NDcxYTgxOGZiYjljZTlhN2NkY2IkNmZiNzg5Yzg1YmIzNGFhNmFiNjQ5OTYzMzdmNGYzZDA="
+CLOUD_ID = " "
 # Create the client instance
 client = Elasticsearch(
-    #hosts=["https://kookdata.kb.ap-northeast-2.aws.elastic-cloud.com:9243"],
+    hosts=[" "],
     cloud_id=CLOUD_ID,
     basic_auth=("elastic", ELASTIC_PASSWORD)
 )
@@ -49,4 +49,4 @@ def accident_category():
         return render_template("accident_category.html")
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=False)
+    app.run(host='localhost',port=8000, debug=True)
